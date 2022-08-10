@@ -3,7 +3,9 @@ import "./landing.scss"
 
 const Landing = () => {
   return (
-    <div className='landing'><h1 className="title">Landing Page</h1></div>
+    <div className='landing'>
+      <h1 className="title">Landing Page</h1>
+      </div>
   )
 }
 
