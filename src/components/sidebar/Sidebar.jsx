@@ -7,11 +7,16 @@ import PeopleAltRoundedIcon from '@mui/icons-material/PeopleAltRounded';
 import LocalShippingRoundedIcon from '@mui/icons-material/LocalShippingRounded';
 import NotificationsRoundedIcon from '@mui/icons-material/NotificationsRounded';
 import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
+// import Avatar from './../avatar/a1';
 
 const Sidebar = () => {
   return (
     <div className='sidebar'>
         <div className='top'>
+            <div className="item">
+                <img src='https://i.pinimg.com/736x/08/f0/ec/08f0ec9f38f376d384d9ddafd3e574d2.jpg' alt='' className='avatar'/>
+                {/* <Avatar className="avatar"/> */}
+            </div>
             <span className="logo">jkccAdmin</span>
         </div>
         <hr/>
@@ -19,7 +24,10 @@ const Sidebar = () => {
             <ul>
                 <p className="title">MAIN</p>
                 <li><DashboardRoundedIcon className='icon'/><span>Dashboard</span></li>
-                <li><MessageRoundedIcon className='icon'/><span>Messages</span></li>
+                <li><MessageRoundedIcon className='icon'/>
+                <div className="counter"></div>
+                <span>Messages</span>
+                </li>
                 <li><Inventory2RoundedIcon className='icon'/><span>Inventory</span></li>
                 <li><PeopleAltRoundedIcon className='icon'/><span>Clients</span></li>
                 <li><LocalShippingRoundedIcon className='icon'/><span>Supplier</span></li>
