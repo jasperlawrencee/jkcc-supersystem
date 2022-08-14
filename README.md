@@ -1,5 +1,5 @@
 # JKCC Supersystem
-A Supersystem for Jasper Kissa Computer Center
+A Frontend Project of the Supersystem for Jasper Kissa Computer Center
 
 ## Developers
 1. Caballero, Jasper Lawrence
