@@ -1,10 +1,14 @@
 .widget{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     flex: 1;
     padding: 10px;
-    box-shadow: 10px 0px 61px -23px rgba(0,0,0,0.61);
-    -webkit-box-shadow: 10px 0px 61px -23px rgba(0,0,0,0.61);
-    -moz-box-shadow: 10px 0px 61px -23px rgba(0,0,0,0.61);
+    background-color: rgb(86, 86, 255);
+    color: white;
     border-radius: 10px;
+    height: 150px;
+    width: 250px;
+    font-weight: bold;
 }
