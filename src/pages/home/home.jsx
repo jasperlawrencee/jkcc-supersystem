@@ -8,9 +8,9 @@ import "./home.scss"
 const Home = () => {
   return (
     <div className="home">
-      <Sidebar/>
+      <Sidebar />
       <div className="homeContainer">
-        <Navbar/>
+        <Navbar />
         <div className="widgets">
           <Widget type="pos"/>
           <Widget type="inventory"/>
