@@ -1,6 +1,6 @@
 import React from 'react'
 import "./login.scss"
-import FormInput from "../../components/FormInput"
+import FormInput from "../../components/forminput/FormInput"
 import { useState } from 'react'
 
 const Login = () => {
@@ -44,7 +44,7 @@ console.log(values)
       ) )}
       <button>Log In</button>
     </form>
-    <p1 className="artwork">Artwork: Plainoasis</p1>
+    <div className="artwork">Artwork: Plainoasis</div>
   </div>
 }
 

@@ -7,15 +7,14 @@ import PeopleAltRoundedIcon from '@mui/icons-material/PeopleAltRounded';
 import LocalShippingRoundedIcon from '@mui/icons-material/LocalShippingRounded';
 import NotificationsRoundedIcon from '@mui/icons-material/NotificationsRounded';
 import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
-// import Avatar from './../avatar/a1';
+import avatar from '../../assets/avatar.png';
 
 const Sidebar = () => {
   return (
     <div className='sidebar'>
         <div className='top'>
             <div className="item">
-                <img src='https://i.pinimg.com/736x/08/f0/ec/08f0ec9f38f376d384d9ddafd3e574d2.jpg' alt='' className='avatar'/>
-                {/* <Avatar className="avatar"/> */}
+                <img src={avatar} alt='' className='avatar'/>
             </div>
             <span className="logo">jkccAdmin</span>
         </div>

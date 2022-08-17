@@ -5,11 +5,9 @@
     height: 100vh;
     background-size: cover;
     background-position: center;
-    background-image: url(
-        "../../assets/windmill.jpg"
-    );
-    // background: rgb(238,174,202);
-    // background: radial-gradient(circle, #4e65ff 0%, #92effd 100%);
+    background-repeat: no-repeat;
+    background-color: #4e65ff;
+    background-image: url(../../assets/windmill.jpg);
 }
 
 form{
@@ -47,4 +45,5 @@ button{
     font-size: 8px;
     color: whitesmoke;
     border-bottom: 1px solid white;
+    width: max-content;
 }
