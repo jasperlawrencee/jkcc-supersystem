@@ -16,23 +16,21 @@ const Sidebar = () => {
             <div className="item">
                 <img src={avatar} alt='' className='avatar'/>
             </div>
-            <span className="logo">jkccAdmin</span>
+            <p className="logo">jkccAdmin</p>
         </div>
         <hr/>
         <div className='center'>
             <ul>
                 <p className="title">MAIN</p>
-                <li><DashboardRoundedIcon className='icon'/><span>Dashboard</span></li>
-                <li><MessageRoundedIcon className='icon'/>
-                <div className="counter"></div>
-                <span>Messages</span>
+                <li><DashboardRoundedIcon className='icon'/><p>Dashboard</p></li>
+                <li><MessageRoundedIcon className='icon'/><div className="counter"></div><p>Messages</p>
                 </li>
-                <li><Inventory2RoundedIcon className='icon'/><span>Inventory</span></li>
-                <li><PeopleAltRoundedIcon className='icon'/><span>Clients</span></li>
-                <li><LocalShippingRoundedIcon className='icon'/><span>Supplier</span></li>
+                <li><Inventory2RoundedIcon className='icon'/><p>Inventory</p></li>
+                <li><PeopleAltRoundedIcon className='icon'/><p>Clients</p></li>
+                <li><LocalShippingRoundedIcon className='icon'/><p>Supplier</p></li>
                 <p className="title">ADMIN SERVICES</p>
-                <li><NotificationsRoundedIcon className='icon'/><span>Sales Report</span></li>
-                <li><LogoutRoundedIcon className='icon'/><span>Logout</span></li>
+                <li><NotificationsRoundedIcon className='icon'/><p>Sales Report</p></li>
+                <li><LogoutRoundedIcon className='icon'/><p>Logout</p></li>
             </ul>
         </div>
         <div className='bottom'>
