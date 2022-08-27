@@ -10,7 +10,7 @@ const Reportbar = () => {
             <div className="icons">
                 <ul>
                     <li><InboxRoundedIcon className='icon'/><p>Item Inventory</p></li>
-                    <li><InboxRoundedIcon className='icon'/><p>Supplier Information</p></li>
+                    <li><InboxRoundedIcon className='icon'/><p>Supplier Info</p></li>
                     <li><InboxRoundedIcon className='icon'/><p>Order Form</p></li>
                     <li><InboxRoundedIcon className='icon'/><p>Return Form</p></li>
                     <li><InboxRoundedIcon className='icon'/><p>Inventory Report</p></li>
