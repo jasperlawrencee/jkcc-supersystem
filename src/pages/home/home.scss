@@ -4,14 +4,20 @@
     .homeContainer{
         flex: 5;
 
-        .widgets{
-            height: 80%;
-            width: auto;
+        button{
+            height: 150px;
+            width: 250px;
+            background-color: rgb(0, 160, 255);
             display: grid;
             grid-template-columns: 1fr 1fr;
             padding: 40px;
             grid-gap: 20px;
-            justify-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button:hover{
+            opacity: 0.9;
         }
     }
 }

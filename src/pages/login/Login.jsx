@@ -2,8 +2,14 @@ import React from 'react'
 import "./login.scss"
 import FormInput from "../../components/forminput/FormInput"
 import { useState } from 'react'
+import {Routes, Route, useNavigate} from 'react-router-dom';
+import Home from '../home/Home';
 
 const Login = () => {
+  const navigate = useNavigate()
+  const naviagateToHome = () => {
+    navigate('/home/admin')
+  }
   const [values,setValues] = useState({
     username:"",
     password:"",
@@ -42,7 +48,10 @@ console.log(values)
       {inputs.map((input) => (
         <FormInput key={input.id} {...input} value={values[input.name]} onChange={onChange}/>
       ) )}
-      <button>Log In</button>
+      <button onClick={naviagateToHome}>Log In</button>
+      <Routes>
+        <Route path="home/admin" element={<Home/>}/>
+      </Routes>
     </form>
     <div className="artwork">Artwork: Plainoasis</div>
   </div>

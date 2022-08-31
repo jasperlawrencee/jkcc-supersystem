@@ -1,7 +1,7 @@
 import React from 'react'
 import Reportbar from '../../components/reportbar/Reportbar'
 import "./inventory.scss"
-import Table from '../../components/table/Table'
+// import materialTable from '../../components/table/materialTable'
 
 const Inventory = () => {
   return (
@@ -10,7 +10,7 @@ const Inventory = () => {
       <Reportbar/>
       </div>
       <div className="listtable">
-        <Table />
+        <materialTable/>
       </div>
     </div>
   )

@@ -12,7 +12,10 @@ import {
   BrowserRouter,
   Routes,
   Route,
+  useNavigate,
 } from "react-router-dom";
+import POS from "./pages/pos/POS";
+
 
 function App() {
   return (
@@ -39,6 +42,9 @@ function App() {
             <Route path="inventory">
               <Route index element={<Inventory/>}>
               </Route>
+            <Route path="pos">
+              <Route index element={<POS/>}/>
+            </Route>
             </Route>
           </Route>
         </Routes>
