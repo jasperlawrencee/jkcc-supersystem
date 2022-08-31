@@ -7,8 +7,6 @@ import POS from '../pos/POS'
 import {
   Route,
   Routes,
-  // Route,
-  // Routes,
   useNavigate
 } from 'react-router-dom'
 
@@ -39,8 +37,8 @@ const Home = () => {
           <button>Tax</button>
           <button>Send Alerts</button>
           <Routes>
-            <Route path='/inventory' element={<Inventory/>}/>
             <Route path='/pos' element={<POS/>}/>
+            <Route path='/inventory' element={<Inventory/>}/>
           </Routes>
         </div>
       </div>

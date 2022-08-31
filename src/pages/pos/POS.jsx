@@ -1,8 +1,9 @@
 import React from 'react'
+import "./pos.scss"
 
 const POS = () => {
   return (
-    <div>POS Page</div>
+    <div className="pos">POS page here</div>
   )
 }
 

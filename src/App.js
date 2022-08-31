@@ -7,14 +7,14 @@ import Single from "./pages/single/Single";
 import New from "./pages/new/New";
 import List from "./pages/list/List";
 import Inventory from "./pages/inventory/Inventory";
+import POS from "./pages/pos/POS";
 
 import {
   BrowserRouter,
   Routes,
   Route,
-  useNavigate,
+  // useNavigate,
 } from "react-router-dom";
-import POS from "./pages/pos/POS";
 
 
 function App() {
