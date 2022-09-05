@@ -8,12 +8,12 @@ import New from "./pages/new/New";
 import List from "./pages/list/List";
 import Inventory from "./pages/inventory/Inventory";
 import POS from "./pages/pos/POS";
+import Alerts from "./pages/alerts/Alerts"
 
 import {
   BrowserRouter,
   Routes,
   Route,
-  // useNavigate,
 } from "react-router-dom";
 
 
@@ -39,11 +39,15 @@ function App() {
               <Route path=":productID" element={<Single/>}/>
               <Route path="new" element={<New/>}/>
             </Route>
-            <Route path="inventory">
+            <Route path="home/admin/inventory">
               <Route index element={<Inventory/>}>
-              </Route>
-            <Route path="pos">
+            </Route>
+            </Route>
+            <Route path="home/admin/pos">
               <Route index element={<POS/>}/>
+            </Route>
+            <Route path="home/admin/alerts">
+              <Route index element={<Alerts/>}>
             </Route>
             </Route>
           </Route>
