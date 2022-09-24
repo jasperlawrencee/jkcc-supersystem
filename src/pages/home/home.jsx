@@ -4,6 +4,9 @@ import Sidebar from '../../components/sidebar/Sidebar'
 import "./home.scss"
 import Inventory from '../inventory/Inventory'
 import POS from '../pos/POS'
+import EM from '../EM/Em'
+import Sales from '../sales/Sales';
+import Alerts from '../alerts/Alerts';
 import {
   Route,
   Routes,
@@ -17,6 +20,15 @@ const Home = () => {
   }
   const navigateToPos = () => {
     navigate('/pos')
+  }
+  const navigateToEmpl = () => {
+    navigate('/EM')
+  }
+  const navigateToSales = () => {
+    navigate('/sales')
+  }
+  const navigateToAlerts = () => {
+    navigate('/alerts')
   }
   return (
     <div className="home">
@@ -32,13 +44,16 @@ const Home = () => {
           {/* <Widget type="alert"/> */}
           <button onClick={navigateToPos}>POS</button>
           <button onClick={navigateToInv}>Inventory</button>
-          <button>Employees</button>
-          <button>Sales</button>
+          <button onClick={navigateToEmpl}>Employees</button>
+          <button onClick={navigateToSales}>Sales</button>
           <button>Tax</button>
-          <button>Send Alerts</button>
+          <button onClick={navigateToAlerts}>Send Alerts</button>
           <Routes>
             <Route path='/pos' element={<POS/>}/>
             <Route path='/inventory' element={<Inventory/>}/>
+            <Route path='/EM' element={<EM/>}/>
+            <Route path='/sales' element={<Sales/>}/>
+            <Route path='/alerts' element={<Alerts/>}/>
           </Routes>
         </div>
       </div>

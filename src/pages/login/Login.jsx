@@ -10,11 +10,11 @@ const Login = () => {
   const naviagateToHome = () => {
     navigate('/home/admin')
   }
+  //INPUT BOX
   const [values,setValues] = useState({
     username:"",
     password:"",
-  }); 
-  
+  });
   const inputs = [
     {
     id:1,
@@ -42,6 +42,7 @@ const onChange = (e)=> {
   setValues({...values, [e.target.name]: e.target.value})
 }
 console.log(values)
+//NO BACKEND LOGIN CODE
   return <div className="app">
     <form onSubmit={handleSubmit}>
     <h1>Log In</h1>
@@ -53,7 +54,6 @@ console.log(values)
         <Route path="home/admin" element={<Home/>}/>
       </Routes>
     </form>
-    <div className="artwork">Artwork: Plainoasis</div>
   </div>
 }
 
