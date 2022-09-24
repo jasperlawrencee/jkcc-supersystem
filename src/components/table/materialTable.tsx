@@ -5,7 +5,7 @@ import React from 'react'
 export const materialTable = () => {
   return (
     <TableContainer component={Paper}>
-      <Table aria-aria-label='simple table'>
+      <Table aria-label='simple table'>
         <TableHead>
           <TableRow>
             <TableCell>ID</TableCell>

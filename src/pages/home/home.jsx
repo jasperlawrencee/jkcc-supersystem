@@ -16,10 +16,10 @@ import {
 const Home = () => {
   const navigate = useNavigate()
   const navigateToInv = () => {
-    navigate('/inventory')
+    navigate('/home/admin/inventory')
   }
   const navigateToPos = () => {
-    navigate('/pos')
+    navigate('/home/admin/pos')
   }
   const navigateToEmpl = () => {
     navigate('/EM')
