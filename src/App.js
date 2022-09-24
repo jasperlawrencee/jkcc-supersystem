@@ -8,14 +8,10 @@ import New from "./pages/new/New";
 import List from "./pages/list/List";
 import Inventory from "./pages/inventory/Inventory";
 import POS from "./pages/pos/POS";
-<<<<<<< HEAD
 import EM from './pages/EM/Em';
 import Sales from './pages/sales/Sales';
 import Alerts from './pages/alerts/Alerts';
 
-=======
-import Alerts from "./pages/alerts/Alerts"
->>>>>>> 2b584416ae7ce17fe644f63d7b3b3fabd8fd5534
 
 import {
   BrowserRouter,
@@ -46,22 +42,9 @@ function App() {
               <Route path=":productID" element={<Single/>}/>
               <Route path="new" element={<New/>}/>
             </Route>
-<<<<<<< HEAD
             </Route>
             <Route path="inventory">
               <Route index element={<Inventory/>}>
-=======
-            <Route path="home/admin/inventory">
-              <Route index element={<Inventory/>}>
-            </Route>
-            </Route>
-            <Route path="home/admin/pos">
-              <Route index element={<POS/>}/>
-            </Route>
-            <Route path="home/admin/alerts">
-              <Route index element={<Alerts/>}>
-            </Route>
->>>>>>> 2b584416ae7ce17fe644f63d7b3b3fabd8fd5534
             </Route>
           </Route>
             <Route path="pos">
@@ -77,7 +60,7 @@ function App() {
                 <Route index element={<Sales/>}/>
             </Route>
             <Route path="alerts">
-                <Route index element={<Alerts />}/>
+                <Route index element={<Alerts/>}/>
             </Route>
         </Routes>
   </BrowserRouter>
